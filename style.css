@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+body{
+    background-color:rgb(233, 232, 232);
+    margin: 0 auto;
+    max-width: 1440px;
+}
+.cont{
+    margin: 10px;
+    width: 300px;
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw 20vw;
+    grid-template-rows:35vh 30vh 35vh;
+    height: 100vh;
+    text-align: center;
+    gap: 20px;
+
+}
+.cont .first{
+    grid-row: span 2;
+    height: 50vh;
+    font-size:2em;
+    background-color: bisque;
+    text-align: center;
+
+}
+.first img{
+    height: 50px;
+    width: 100px;
+}
+.first span{
+    color: blueviolet;
+}
+.sec {
+    color: white;
+    font-size: 1em;
+    grid-column: span 2;
+    background-color: blueviolet;
+}
+
+.sec h1 span{
+    color: rgb(202, 202, 48);
+}
+.sec img{
+    width: 200px;
+    height: 30px;
+}
+.sec h5{
+    margin-top:5px;
+}
+.three{
+    padding: 20px;
+    grid-row: span 2;
+    background-color: rgb(144, 144, 184);
+    overflow: hidden;
+}
+.three img{
+    width: 200px;
+    height: 200px;
+    padding-left: 10px;
+}
+.five{
+    background-color: white;
+    overflow: hidden;
+    font-size: 1.3em;
+}
+.five img{
+    width: 260px;
+    height: 60px;
+}
+.six{
+    background-color: rgb(240, 180, 106);
+    font-size: 1.3em;
+    overflow: hidden;
+}
+.six img{
+    width: 166px;
+    height: 100px;
+}
+.four{
+    grid-row: span 2;
+    background-color: rgb(240, 180, 106);
+    font-size: 1.3em;
+    height: 53vh;
+    margin-bottom: 100px;
+    position: relative;
+    top: -120px;
+}
+.seven{
+    font-size: 1.3em;
+    background-color: white;
+}
+.seven img{
+    width: 100px;
+    height: 50px;
+}
+.eight{
+    grid-column: span 2;
+    background-color: blueviolet;
+    display: flex;
+    color:white;
+    padding: 20px;
+}
+.eight img{
+    flex: 1;
+    width: 76px;
+    height: 90%;
+
+
+}
+.eight h1{
+    flex: 1;
+}
+@media screen and (max-width:375px) {
+    .cont{
+        display: flex;
+        flex-direction: column;
+        margin: 15px auto;
+        
+    }
+    .four{
+        margin-top: 120px;
+    }
+    .five,
+    .six,
+    .three{
+        overflow:visible;
+    }
+    .eight{
+        margin-top: 0px;
+        
+    }
+    .seven{
+        margin-top: -220px;
+    }
+
+    
+}
