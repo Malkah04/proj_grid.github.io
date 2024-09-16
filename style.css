@@ -117,7 +117,7 @@ body{
 .eight h1{
     flex: 1;
 }
-@media screen and (max-width:375px) {
+@media screen and (max-width:768px) {
     .cont{
         display: flex;
         flex-direction: column;
